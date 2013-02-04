@@ -51,7 +51,10 @@ group :test do
   gem 'jasmine', :git => "https://github.com/pivotal/jasmine-gem.git", :branch => "1.2.rc1", :group => [:development, :test]
 end
 
+# redim des images 
+gem 'image_science'
 
+# bootstrap
 gem "twitter-bootstrap-rails"
 gem 'bootstrap_form'
 gem 'font-awesome-rails'
