@@ -33,14 +33,11 @@
 </head>
 <body>
 
-  <%= render "top_bar" unless @print_version %>
+  <%= render "top_bar" %>
+    <%= render "side_bar"  %>
 
   <%= yield %>
 
-  <ul class="audio_channels" style="display:none;">
-    <audio class="audio_private"></audio>
-    <audio class="audio_common"></audio>
-  </ul>
 
   <%- if user_signed_in? && Cloudfuji::Platform.on_cloudfuji? %>
     <%= javascript_tag do %>
