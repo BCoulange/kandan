@@ -52,6 +52,8 @@ group :test do
 end
 
 
+
+# bootstrap
 gem "twitter-bootstrap-rails"
 gem 'bootstrap_form'
 gem 'font-awesome-rails'
