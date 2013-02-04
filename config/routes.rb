@@ -10,6 +10,8 @@ Kandan::Application.routes.draw do
     resources :attachments
   end
 
+  resources :illulives
+
   get "/active_users" => "apis#active_users"
 
   # The priority is based upon order of creation:
