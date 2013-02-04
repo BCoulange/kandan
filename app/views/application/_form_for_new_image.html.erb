@@ -1,0 +1,23 @@
+<%= form_for(@illulive, :remote => (params[:action] == 'new' ? true : false)) do |f| %>
+
+<!-- messages d'erreurs virés -->
+
+  <fieldset>
+    <div class="field">
+      <%= f.label :titre, :class => 'required' %><br />
+      <%= f.text_field :titre, :required => true %>
+    </div>
+    <div class="field">
+      <%= f.label :commentaire, :class => 'required' %><br />
+      <%= f.text_area :commentaire, :required => true %>
+    </div>
+
+      <div class="field">
+        <%= f.label :attachment, :class => 'required' %><br />
+        <%= f.file_field :attachment, :required => true %>
+      </div>
+    </fieldset>
+  <div class="actions">
+    <%= f.submit 'Submit!', :disable_with => 'Envoi en cours...' %>
+  </div>
+<% end %>
