@@ -50,3 +50,8 @@ group :test do
   gem 'factory_girl_rails', '~> 3.0'
   gem 'jasmine', :git => "https://github.com/pivotal/jasmine-gem.git", :branch => "1.2.rc1", :group => [:development, :test]
 end
+
+
+gem "twitter-bootstrap-rails"
+gem 'bootstrap_form'
+gem 'font-awesome-rails'
