@@ -24,7 +24,7 @@ gem '_bushido-faye', '0.8.2'
 
 # Helper gems
 gem 'kaminari'
-gem 'aws-sdk'
+#gem 'aws-sdk'
 gem 'cloudfuji_paperclip'
 gem 'remotipart'
 gem 'jquery-rails'
@@ -51,8 +51,10 @@ group :test do
   gem 'jasmine', :git => "https://github.com/pivotal/jasmine-gem.git", :branch => "1.2.rc1", :group => [:development, :test]
 end
 
-# redim des images 
-gem 'image_science'
+# upload des images 
+gem 'figaro'
+gem 'haml-rails'
+gem 'aws-s3', :require => 'aws/s3'
 
 # bootstrap
 gem "twitter-bootstrap-rails"

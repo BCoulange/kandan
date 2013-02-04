@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery-ui
 //= require jquery_ujs
+//= require uploads
 //= require lib/jquery.filedrop
 //= require lib/underscore
 //= require lib/backbone

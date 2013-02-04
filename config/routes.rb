@@ -12,6 +12,8 @@ Kandan::Application.routes.draw do
 
   get "/active_users" => "apis#active_users"
 
+  resources :uploads
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
