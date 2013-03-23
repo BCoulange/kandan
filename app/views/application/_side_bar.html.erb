@@ -1,9 +1,20 @@
+<%= javascript_tag do %>
+  $(document).ready(function(){
+		var refreshId = setInterval(function()
+		{
+		     $('#imageLive').fadeOut("slow").replaceWith('<%= escape_javascript(image_tag "top.png") %>').fadeIn("slow");
+		}, 10000);
+  })
+<%- end %>
+
 <div class="sidebar-nav-fixed pull-right">
 	<h1> Illustrations live! </h1>
 		<ul class="thumbnails">
 		  <li class="span4">
     		<a href="#" class="thumbnail">
-      			<img data-src="holder.js/300x200" alt="">
+    			<div id = "imageLive">
+      			<%# image_tag Illulive.all[0].attachment %>
+      		</div>
     		</a>
   			</li>
 
